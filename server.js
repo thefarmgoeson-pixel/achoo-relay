@@ -99,7 +99,8 @@ function safeSend(ws, data) {
   }
 }
 
-httpServer.listen(PORT, () => {
+httpServer.listen(PORT, '0.0.0.0', () => {
+
   console.log(`
   Achoo Relay Server
   ─────────────────────────────
